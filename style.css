@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+    --Very-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 375px;
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 90%;
+    height: 1329px;
+    margin: 85px auto;
+    overflow: hidden;
+}
+
+.section_sedan{
+    background-color: var(--Bright-orange);
+    padding: 45px;
+}
+
+.section_suvs{
+    background-color: var(--Dark-cyan);
+    padding: 45px;
+}
+
+.section_luxury {
+    background-color: var(--Very-dark-cyan);
+    padding: 45px;
+}
+
+h1 {
+    height: 35px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: var(--Very-light-gray);
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+p {
+    height: 130px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 30px;
+    color: var(--Transparent-white);
+    margin-bottom: 35px;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    width: 145px;
+    height: 48px;
+    border-radius: 45px;
+    border-style: none;
+    background-color: var(--Very-light-gray);
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid var(--Very-light-gray);
+    color: var(--Very-light-gray);
+}
+
+.button_sedan {
+    color: var(--Bright-orange);
+}
+
+.button_sedan:hover{
+    background-color: var(--Bright-orange);    
+} 
+
+
+.button_suvs {
+    color: var(--Dark-cyan);
+}
+
+.button_suvs:hover{
+    background-color: var(--Dark-cyan);    
+} 
+
+.button_luxury {
+    color: var(--Very-dark-cyan);
+}
+
+.button_luxury:hover{
+    background-color: var(--Very-dark-cyan);    
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 653px) {
+    p {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 946px) {
+    .container {
+        flex-direction: row;
+        width: 920px;
+        height: 505px;
+    }
+
+    p {
+        font-size: 1.3em;
+        margin-bottom: 100px;
+    }
+}
+
